@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "RC Badger",
+    "version": "0.0.0.1",
+    "version_name": "first draft",
+
+    "description": "Thing what identifies RC Twitter and Github Profiles",
+    "icons": {},
+
+    "author": "John Hergenroeder",
+    
+
+    "permissions": [
+        "storage",
+        "https://www.recurse.com/",
+        "https://twitter.com/",
+        "https://github.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.recurse.com/people"],
+            "js": ["refresh_ids.js"]
+        },
+        {
+            "matches": ["https://twitter.com/*"],
+            "exclude_matches": ["https://twitter.com/settings/*"],
+            "js": ["twitter_badges.js"]
+        },
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["github_badges.js"]
+        }
+    ]
+
+}
