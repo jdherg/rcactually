@@ -20,21 +20,21 @@
     "content_scripts": [
         {
             "matches": ["https://www.recurse.com/people"],
-            "js": ["refresh_ids.js"]
+            "js": ["scripts/refresh_ids.js"]
         },
         {
             "matches": ["https://twitter.com/*"],
             "exclude_matches": ["https://twitter.com/settings/*"],
-            "js": ["twitter_badges.js"]
+            "js": ["scripts/twitter_badges.js"]
         },
         {
             "matches": ["https://github.com/*"],
-            "js": ["github_badges.js"]
+            "js": ["scripts/github_badges.js"]
         }
     ],
 
     "web_accessible_resources": [
-        "rc.png"
+        "images/rc.png"
     ]
 
 }

@@ -11,7 +11,7 @@ chrome.storage.local.get(
             }
             if(twitter_id_list.indexOf(username) != -1) {
                 var logo = new Image();
-                logo.src = chrome.extension.getURL('rc.png');
+                logo.src = chrome.extension.getURL('images/rc.png');
                 logo.style.height = '1em';
                 logo.style['vertical-align'] = 'middle';
                 logo.style.margin = '2px';
