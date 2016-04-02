@@ -7,7 +7,7 @@ chrome.storage.local.get(
         for (var i = 0; i < links.length; i++) {
             var address = links[i].href;
             var candidate = address.substr(address.indexOf('github.com') + 11)
-            if(candidate.indexOf('/') == -1 && github_id_list.indexOf(candidate) != -1) {
+            if(candidate.indexOf('/') == -1 && github_id_list.indexOf(candidate) != -1  && links[i].textContent === candidate) {
                 var logo = new Image();
                 logo.src = chrome.extension.getURL('images/rc.png');
                 logo.style.height = '1em';
