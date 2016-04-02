@@ -31,6 +31,10 @@
             "matches": ["https://github.com/*"],
             "js": ["github_badges.js"]
         }
+    ],
+
+    "web_accessible_resources": [
+        "rc.png"
     ]
 
 }
