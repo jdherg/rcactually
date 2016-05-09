@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "RC Badger",
+    "name": "RC Actually",
     "version": "0.0.0.1",
     "version_name": "first draft",
 
-    "description": "Thing what identifies RC Twitter and Github Profiles",
+    "description": "Thing what identifies RCer Twitter and Github Profiles",
     "icons": {},
 
     "author": "John Hergenroeder",

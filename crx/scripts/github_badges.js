@@ -3,7 +3,6 @@ chrome.storage.local.get(
     function (result) {
         var github_id_list = result['github_ids'];
         var links = document.getElementsByTagName('a');
-        console.log("Attempting to match.");
         for (var i = 0; i < links.length; i++) {
             var address = links[i].href;
             var candidate = address.substr(address.indexOf('github.com') + 11)
@@ -14,7 +13,6 @@ chrome.storage.local.get(
                 logo.style['vertical-align'] = 'middle';
                 logo.style.margin = '2px';
                 links[i].appendChild(logo)
-                console.log("Match! " + candidate);
             }
         }
 })
